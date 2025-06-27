@@ -1,0 +1,60 @@
+/* Set background image */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transparent glass-effect container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Reader area */
+#reader {
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Text result */
+#result {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Buttons and input */
+button, input[type="file"] {
+  margin: 10px 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0f62fe;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0353e9;
+}
+
+input[type="file"] {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}

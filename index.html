@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Scanner</title>
+
+  <!-- html5-qrcode CDN -->
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main transparent container -->
+  <div class="container">
+    <h1 style="color: white;">QR Code Scanner</h1>
+
+    <!-- Camera QR code reader -->
+    <div id="reader"></div>
+
+    <!-- Camera buttons -->
+    <button onclick="startScanner()">Start Camera</button>
+    <button onclick="stopScanner()">Stop Camera</button>
+
+    <!-- QR scan result -->
+    <div id="result">Scanned QR Code will appear here</div>
+
+    <!-- Image upload scanner -->
+    <h3 style="color: white;">Or upload a QR code image:</h3>
+    <input type="file" accept="image/*" onchange="scanImage(this)">
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
